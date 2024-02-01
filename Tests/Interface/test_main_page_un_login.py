@@ -202,7 +202,7 @@ class TestFooter:
             ('Политика конфиденциальности', 'https://documentation.vkplay.ru/terms_vkp/privacy_vkp',
              '//div[contains(@class, "Footer_links")]/a[2]'),
             ('Поддержка', 'https://support.vkplay.ru/',
-             '//div[contains(@class, "Footer_links")]/a[3]'),
+             '//div[contains(@class, "Footer_links")]/a[4]'),
         ]
     )
     def test_footer(self, MainPage, btn_text, btn_url, btn_xpath):

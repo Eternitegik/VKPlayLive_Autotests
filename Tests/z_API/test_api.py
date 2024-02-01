@@ -42,7 +42,7 @@ class TestAPI:
 
         response = GetResponse(url_current)
 
-        if response.status_code == 200:
+        if response.status_code == 200:  # Нужно заменить на 200, сделано специально
             CD.Response.model_validate(json.loads(response.text))
             assert dict(json.loads(response.text))[
                 "displayName"] == Config.USERNAME
